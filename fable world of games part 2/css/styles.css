@@ -1,0 +1,134 @@
+/* reset all margins and paddings */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* body font */
+body{
+font-family:Arial,sans-serif;
+font-size:16px;
+background:#111;
+color:white;
+}
+
+/* header style */
+header{
+background:#222;
+text-align:center;
+padding:20px;
+}
+
+header h1{
+color:yellow;
+font-size:2rem;
+}
+
+/* nav simple style */
+nav{
+background:#333;
+text-align:center;
+padding:10px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 10px;
+font-weight:bold;
+}
+
+nav a:hover{
+color:yellow;
+}
+
+/* main section */
+main{
+padding:20px;
+}
+
+/* headings and paragraph */
+h2{
+color:yellow;
+font-size:1.5rem;
+margin-bottom:10px;
+}
+p{
+margin-bottom:15px;
+line-height:1.4;
+font-size:1rem;
+}
+
+/* games grid */
+.games{
+display:grid;
+grid-template-columns:1fr;
+gap:15px;
+margin-top:15px;
+}
+
+.game{
+background:#222;
+padding:10px;
+border:1px solid #444;
+text-align:center;
+border-radius:8px;
+transition:all 0.2s;
+}
+
+/* images simple responsive */
+.game img{
+width:100%;
+height:auto;
+border-radius:5px;
+margin-bottom:10px;
+}
+
+.game h3{
+font-size:1.2rem;
+color:yellow;
+margin-bottom:5px;
+}
+
+.game p{
+font-size:1rem;
+line-height:1.4;
+color:white;
+}
+
+/* hover effect */
+.game:hover{
+transform:translateY(-3px);
+box-shadow:0 4px 8px rgba(0,0,0,0.4);
+}
+
+/* footer */
+footer{
+text-align:center;
+padding:10px;
+background:#222;
+color:#aaa;
+}
+
+/* media queries */
+@media(min-width:600px){
+.games{
+grid-template-columns:repeat(2,1fr);
+}
+}
+
+@media(min-width:1024px){
+.games{
+grid-template-columns:repeat(3,1fr);
+}
+header h1{
+font-size:2.5rem;
+}
+h2{
+font-size:1.8rem;
+}
+p{
+font-size:1.1rem;
+}
+}
