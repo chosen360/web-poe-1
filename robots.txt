@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Sitemap: https://Chosen360.github.io/fablesgames/sitemap.xml
